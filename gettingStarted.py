@@ -1,3 +1,4 @@
+import logging
 ### welcome_assignment_answers
 ### Input - All nine questions given in the assignment.
 ### Output - The right answer for the specific question.
@@ -27,8 +28,8 @@ def welcome_assignment_answers(question):
         ### you should understand why this else case should be included
         ### what happens if there is a typo in one of the questions?
         ### maybe put something here to flag an issue and catch errors
-        log += question
-        answer = log
+        log = question
+        answer = f"Invalid question! You Typed {log}"
     return(answer)
     
 # Complete all the questions.
