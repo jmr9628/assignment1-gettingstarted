@@ -11,7 +11,7 @@ def welcome_assignment_answers(question):
         answer = "No"
     elif question == "Is it possible to decrypt a message without a key? - Yes/No":
         answer = "No"
-    elif question == "Is it possible to decode a message without a key?":
+    elif question == "Is it possible to decode a message without a key? - Yes/No":
         answer = "Yes"
     elif question == "Is a hashed message supposed to be un-hashed? - Yes/No":
         answer = "No"
@@ -24,12 +24,10 @@ def welcome_assignment_answers(question):
     elif question == "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
         answer = 3
     else:
-        _ = "Error logged"  # Log error in a throwaway variable
-        answer = "Invalid question."
         ### you should understand why this else case should be included
         ### what happens if there is a typo in one of the questions?
         ### maybe put something here to flag an issue and catch errors
-        ### answer = "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
+        answer = "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
     return(answer)
     
 # Complete all the questions.
