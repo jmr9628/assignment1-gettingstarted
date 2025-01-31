@@ -3,6 +3,7 @@
 ### Output - The right answer for the specific question.
 
 def welcome_assignment_answers(question):
+    error_log = []  # Define a simple log storage
     #Students do not have to follow the skeleton for this assignment.
     #Another way to implement is using a "case" statements similar to C.
     if question == "In Slack, what is the secret passphrase posted in the #lab-python-getting-started channel posted by a TA?":
