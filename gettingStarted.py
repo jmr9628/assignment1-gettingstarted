@@ -24,7 +24,9 @@ def welcome_assignment_answers(question):
     elif question == "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
         answer = 3
     else:
-        assert False, "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
+        log_message = "Error: Unrecognized question."  # Basic log statement
+        error_log.append(log_message)  # Append log to list (non-print logging)
+        answer = "Invalid question. Please check for typos."
     return(answer)
     
 # Complete all the questions.
