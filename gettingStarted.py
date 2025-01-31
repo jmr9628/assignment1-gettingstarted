@@ -28,8 +28,9 @@ def welcome_assignment_answers(question):
         ### you should understand why this else case should be included
         ### what happens if there is a typo in one of the questions?
         ### maybe put something here to flag an issue and catch errors
-        log = question
-        answer = f"Invalid question! You Typed {log}"
+        logging.warning("Invalid or unproperly formatted question received. Please check your input below!")
+        error = question
+        answer = error
     return(answer)
     
 # Complete all the questions.
