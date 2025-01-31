@@ -7,7 +7,7 @@ def welcome_assignment_answers(question):
     #Another way to implement is using a "case" statements similar to C.
     try:
         if question == "In Slack, what is the secret passphrase posted in the #lab-python-getting-started channel posted by a TA?":
-            answer == "pcap"
+            answer = "pcap"
         elif question == "Are encoding and encryption the same? - Yes/No":
             answer = "No"
         elif question == "Is it possible to decrypt a message without a key? - Yes/No":
@@ -27,7 +27,7 @@ def welcome_assignment_answers(question):
         else:
             raise ValueError
     except ValueError:
-        answer = "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
+        answer = "Invalid"
     return(answer)
     
 # Complete all the questions.
