@@ -24,8 +24,8 @@ def welcome_assignment_answers(question):
     elif question == "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
         answer = 3
     else:
-        answer = "Invalid question."  # Catch error
-        "Error Logged"
+        _ = "Error logged"  # Log error in a throwaway variable
+        answer = "Invalid question."
         ### you should understand why this else case should be included
         ### what happens if there is a typo in one of the questions?
         ### maybe put something here to flag an issue and catch errors
