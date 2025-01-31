@@ -28,7 +28,6 @@ def welcome_assignment_answers(question):
             raise ValueError("Not in the prescribed list of questions!")
     except ValueError as badQuestion:
         answer = str(badQuestion)
-
     return(answer)
     
 # Complete all the questions.
